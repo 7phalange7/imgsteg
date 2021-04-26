@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/encodeFragment"
+        android:name="com.example.imgsteg.ui.encodeFragment"
+        android:label="encodeFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.imgsteg.ui.homeFragment"
+        android:label="homeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_encodeFragment"
+            app:destination="@id/encodeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_decodeFragment"
+            app:destination="@id/decodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/decodeFragment"
+        android:name="com.example.imgsteg.ui.decodeFragment"
+        android:label="decodeFragment" />
+</navigation>
