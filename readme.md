@@ -1,8 +1,14 @@
 # imgsteg
 
-**Main Code** : [`/app/src/main/java/com/example/imgsteg/`](https://github.com/7phalange7/imgsteg/tree/main/app/src/main/java/com/example/imgsteg)
+### Main Code Location
+
+Encoding : [app/src/main/java/com/example/imgsteg/ui/encodeFragment.kt](app/src/main/java/com/example/imgsteg/ui/encodeFragment.kt)
+
+Decoding : [app/src/main/java/com/example/imgsteg/ui/decodeFragment.kt](app/src/main/java/com/example/imgsteg/ui/decodeFragment.kt)
+
+helper functions : [app/src/main/java/com/example/imgsteg/algo/dctAlgo.kt](app/src/main/java/com/example/imgsteg/algo/dctAlgo.kt)
 
 **screenshots**
 |Encoding | Decoding |
 |--------|-------|
-|![img1](https://i.imgur.com/icRzu4A.png)|![img2](https://i.imgur.com/KFaSSZU.png)|
+|![img1](https://i.imgur.com/ttsbrzY.png)|![img2](https://i.imgur.com/KFaSSZU.png)|
