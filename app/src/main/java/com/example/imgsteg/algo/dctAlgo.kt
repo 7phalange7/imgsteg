@@ -266,8 +266,8 @@ object dctAlgo {
                 var bitsToChange = if ((dc in 2..7) || (dc in -8..-1)) 1
                 else if ((dc in 8..15) || (dc in -16..-9)) 2
                 else if ((dc in 16..31) || (dc in -32..-17)) 3
-                else if ((dc in 32..63) || (dc in -64..-33)) 2
-                else 2
+                else if ((dc in 32..63) || (dc in -64..-33)) 4
+                else 5
 
                 var bitsFromMsg = if (bitsToChange < (binMsg.length - bitsWrit)) bitsToChange
                 else (binMsg.length - bitsWrit)
@@ -341,8 +341,8 @@ object dctAlgo {
                 val bitsToChange = if ((dc in 2..7) || (dc in -8..-1)) 1
                 else if ((dc in 8..15) || (dc in -16..-9)) 2
                 else if ((dc in 16..31) || (dc in -32..-17)) 3
-                else if ((dc in 32..63) || (dc in -64..-33)) 2
-                else 2
+                else if ((dc in 32..63) || (dc in -64..-33)) 5
+                else 5
 
                 val mask: Int = 2.0.pow(bitsToChange.toDouble()).toInt() - 1
 
